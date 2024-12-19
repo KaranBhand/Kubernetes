@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: django-pod
+  namespace: django
+spec:
+  containers:
+  - name: django-container
+    image: iamkaran/todo-application:latest
+    ports:
+    - containerPort: 8000
